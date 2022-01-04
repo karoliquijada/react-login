@@ -7,9 +7,9 @@ const RegisterCard = ({id, name, username, content }) => {
     <Card className="card-style" variant="outlined">
          <h1>Sign in</h1>
          <form>
-            <TextField id="standard-basic" label="Username" variant="standard" />
-            <TextField id="standard-basic" label="Password" variant="standard" />
-            <Button variant="contained" color="primary">Sign in</Button>
+            <TextField id="username-tf" label="Username" variant="standard" />
+            <TextField id="password-tf" label="Password" variant="standard" />
+            <Button variant="contained" color="secondary">Sign in</Button>
         </form>
     </Card>
   );

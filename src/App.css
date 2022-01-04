@@ -5,6 +5,8 @@
   --dark-desaturated-blue: hsl(236, 21%, 26%);
   --very-dark-blue: hsl(235, 16%, 14%);
   --super-dark-blue: hsl(234, 17%, 12%);
+  --grayish-blue: hsl(237, 18%, 59%);
+  --soft-red: hsl(345, 95%, 68%);
 }
 
 * {
@@ -14,16 +16,22 @@
 }
 
 body {
-  background-color: var(--very-dark-blue);
+  background-color: var(--super-dark-blue);
+  background-image: url('images/bg-stars.svg');
 }
 
 .App {
   height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-items: center;
 }
 
+h1 {
+  text-align: center;
+  color: var(--very-dark-blue);
+}
 
 .card-style {
   /* Max-width y min height */
@@ -33,7 +41,7 @@ body {
   justify-items: center;
   width: 400px;
   height: auto;
-  padding: 10px;
+  padding: 20px;
 }
 
 form {
@@ -41,5 +49,12 @@ form {
   flex-direction: column;
   justify-items: center;
   row-gap: 20px;
+}
+
+footer {
+  color: var(--grayish-blue);
+  font-family: Roboto;
+  padding: 10px;
+  font-size: 12px;
 }
 
