@@ -64,3 +64,24 @@ footer {
   font-size: 12px;
 }
 
+
+/* Media queries */
+@media (max-width: 300px) {
+  .card-style {
+    width: 250px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 00px) {
+  .card-style {
+    width: 300px;
+  }
+}
