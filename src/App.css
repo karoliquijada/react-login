@@ -51,6 +51,12 @@ form {
   row-gap: 20px;
 }
 
+p {
+  text-align: center;
+  font-size: 11px;
+  color: var(--grayish-blue);
+}
+
 footer {
   color: var(--grayish-blue);
   font-family: Roboto;
