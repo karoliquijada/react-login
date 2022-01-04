@@ -1,9 +1,10 @@
 import './App.css';
+import RegisterCard from './components/RegisterCard/RegisterCard';
 
 function App() {
   return (
     <div className="App">
-      Buenas buenas
+       <RegisterCard/>      
     </div>
   );
 }
