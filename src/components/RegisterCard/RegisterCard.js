@@ -13,7 +13,7 @@ const validationSchema = yup.object({
     .required('Password is required'),
 });
 
-const RegisterCard = ({ username, password }) => {
+const RegisterCard = () => {
   const formik = useFormik({
     initialValues: {
       username: '',
@@ -21,7 +21,7 @@ const RegisterCard = ({ username, password }) => {
     },
     validationSchema: validationSchema,
     onSubmit: (values) => {
-      alert(JSON.stringify(values, null, 2));
+      console.log(JSON.stringify(values, null, 2));
     },
   });
 
@@ -30,7 +30,7 @@ const RegisterCard = ({ username, password }) => {
          <h1>Sign in</h1>
          <form onSubmit={formik.handleSubmit}>
             <TextField 
-              id="username-tf" 
+              id="username" 
               name="username" 
               label="Username" 
               variant="standard"
@@ -39,7 +39,7 @@ const RegisterCard = ({ username, password }) => {
               helperText={formik.touched.username && formik.errors.username} 
             />
             <TextField 
-              id="password-tf" 
+              id="password" 
               name="password"
               label="Password" 
               type="password"
